@@ -12,6 +12,9 @@ who reviews what, how they argue (reasons with weights, blind rounds), how they 
 | `templates/open-threads.md` | one line per open thread; the user's single view |
 | `templates/decision-log.md` | one row per case that needed the user, a vote or a judge |
 | `templates/case.md` | the case file a judge reads |
+| `docs/example.md` | a worked example: one thread from proposal to close, a changed position, a relayed approval |
+| `docs/design.md` | why each main choice was made, and the prior art it borrows from |
+| `docs/faq.md` | cost per tier, two or one sessions, what depends on Claude Code internals, limits |
 
 ## Install
 1. Rule, loaded by every session: copy `rules/session-collaboration.md` to
