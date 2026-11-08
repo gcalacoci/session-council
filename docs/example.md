@@ -52,15 +52,16 @@ in one message who did what: "triage reviewed and committed the line; it also up
 schedule row". No vote, no judge, and the user typed nothing beyond the first "go".
 
 ## A harder case: a position that changed
-In a full-review thread about these same rules, `infra` proposed a filter for "messages
-the user typed": records with no `origin` field. Round 1, `triage` objected **with a
-fact**: "in my transcript, the user's own messages carry `origin.kind: "human"`; your
-filter rejects them (record at line N)". `infra` changed its position and named the fact.
-In round 2, `infra`'s per-file fallback broke on a transcript that mixed both shapes.
-`triage` objected again with the failing record, and the filter became per record.
+In a full-review thread about these same rules, `triage` brought a filter for "messages
+the user typed": records with no `origin` field. Still in round 1, `triage` checked a newer
+transcript, found the user's own messages there carrying `origin.kind: "human"`, and
+corrected **its own fact**: the filter would have rejected every one of them. In round 2,
+`infra` proposed a fallback per file (no `origin` anywhere in the file: accept records
+without one). `triage` objected **with a fact**: its own transcript mixed both shapes, and
+it sent the record that failed. The filter became per record.
 
-Neither change came from a head count: one fact-backed objection outweighed the
-proposer's guess (§7). The decision log row records both changes:
+Neither change came from a head count. A checked fact changed the rule twice: once from the
+session that proposed it, once from a reviewer (§6, §7). The decision log row records both:
 
 ```
 | 2026-11-07 | P-20261107-session-collab | infra (starter), triage, kit | rules for session collaboration | approved with the user's answers | user | 3 | triage: typed-message filter, twice (origin "human" found in transcripts) | no judge | <spec path> |

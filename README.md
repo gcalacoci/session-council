@@ -1,6 +1,6 @@
 # session-council
 
-![status: experimental](https://img.shields.io/badge/status-experimental-orange) ![version: 0.1.0](https://img.shields.io/badge/version-0.1.0-blue) ![licence: MIT](https://img.shields.io/badge/licence-MIT-green)
+![status: experimental](https://img.shields.io/badge/status-experimental-orange) ![version: 0.1.1](https://img.shields.io/badge/version-0.1.1-blue) ![licence: MIT](https://img.shields.io/badge/licence-MIT-green)
 
 Rules and a judge skill for several Claude Code sessions working on the same project:
 who reviews what, how they argue (reasons with weights, blind rounds), how they decide
@@ -35,7 +35,8 @@ fresh transcript before relying on it.
 
 ## Status
 Experimental. Used on one personal project with three or more long-running sessions
-since 7 November 2026 (3 cases in the decision log). Rules may change between 0.x versions.
+since 7 November 2026 (5 cases in the decision log). Rules may change between 0.x versions.
+The story behind it: [Letting my Claude Code sessions argue, then letting me decide](https://gcalacoci.com/posts/letting-my-claude-code-sessions-argue/).
 
 ## Credits
 Ideas borrowed from ECC (`santa-method`, `council`), obra/superpowers
