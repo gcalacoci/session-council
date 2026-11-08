@@ -46,5 +46,5 @@ works as it is.
   method weighs facts over numbers for that reason, but it can't remove the correlation.
 - Sessions must be able to message each other (`SendMessage` / `ListAgents`). Without
   that, you carry the messages by hand.
-- The method has been used on one project with three or more sessions since November 2026,
+- The method has been used on one project with three or more sessions since 7 November 2026,
   so it has little field data yet.

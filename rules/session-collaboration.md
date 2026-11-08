@@ -30,7 +30,7 @@ thread starter.
 - **Thread starter:** the session that sends a thread's first message (§3).
 - **Proposer:** wants the change, writes the proposal, owns the outcome (often the starter).
 - **Reviewers:** the owners of the touched areas. Nobody is added just to win a vote.
-- **Arbiter:** the user, always, reached through the starter. A peer never grants
+- **Approver:** the user, always, reached through the starter. A peer never grants
   permissions or stands in for the user's go.
 - **Judge:** started only when the user asks (skill `session-judge`).
 

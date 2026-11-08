@@ -1,5 +1,7 @@
 # session-council
 
+![status: experimental](https://img.shields.io/badge/status-experimental-orange) ![version: 0.1.0](https://img.shields.io/badge/version-0.1.0-blue) ![licence: MIT](https://img.shields.io/badge/licence-MIT-green)
+
 Rules and a judge skill for several Claude Code sessions working on the same project:
 who reviews what, how they argue (reasons with weights, blind rounds), how they decide
 (consensus, vote, "a fact beats a head count"), and how the user stays in one chat.
@@ -32,4 +34,13 @@ Claude Code with sessions that can message each other (`SendMessage` / `ListAgen
 fresh transcript before relying on it.
 
 ## Status
-In use since November 2026 on one personal project with three or more long-running sessions.
+Experimental. Used on one personal project with three or more long-running sessions
+since 7 November 2026 (3 cases in the decision log). Rules may change between 0.x versions.
+
+## Credits
+Ideas borrowed from ECC (`santa-method`, `council`), obra/superpowers
+(`receiving-code-review`), warpdotdev/common-skills (`council`) and neolabhq
+(`judge-with-debate`, idea only); details and papers in `docs/design.md`.
+
+## Licence
+MIT, see `LICENSE`.
