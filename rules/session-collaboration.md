@@ -74,6 +74,14 @@ rollback; what it doesn't cover; the exact question. Long ones go in a spec file
 - **No basis** ("a default I picked", "a hunch"): allowed only labelled; carries no weight.
 - A fact outweighs a guess, a guess outweighs no basis; weigh how big a guess's gap is.
   Whoever relies on a guess says how to check it; cheap checks run before the decision.
+- **Second-hand is a guess:** a claim copied from a peer message, a report, a compact summary
+  or a session note, including your own, is a guess until checked against the primary
+  source, and is cited by that source. Primary: code, data, logs, CSVs, the user's typed
+  words. A commit is primary for what it changed; a measured effect in its body ("~10 of
+  19 min") is a guess unless it points to a log or CSV. A line in a notes file the sessions
+  keep (for example facts about the user's work) is primary when it quotes the user with a
+  date or cites a commit or file; a paraphrased line is second-hand (check it against the
+  user's typed words).
 - Invalid: "based on factual info", "no particular reason", "best practice", "it's safer",
   "I checked" with nothing named. Such replies don't count. Asked "why?" or "based on?",
   give the basis and its weight, or say there was none.
@@ -83,6 +91,13 @@ rollback; what it doesn't cover; the exact question. Long ones go in a spec file
 - Verdict: agree / agree with changes / object, each saying what was checked (§5). "Good
   point", "you're right" are not verdicts. An objection gives a reason and an alternative.
 - Changing position names the new fact that changed it; otherwise it is flagged.
+- **Open a source** (every tier, one reviewer included): every review reply names at least
+  one source the proposer cited that the reviewer opened itself: the one the decision rests
+  on most, not the cheapest. Open the cited lines, not the whole file. Say the result:
+  "opened `x.py:40-52`: matches" or "does not match: …". A proposal that cites nothing: open
+  the one source that would decide its main claim. A reply that opened nothing says "no
+  source opened", and its verdict counts as a guess. A cited source that does not match is a
+  fact-backed objection (§7). A small script that prints the cited lines saves a step.
 - One message per round. Silence is never agreement: the starter tells the user.
 
 ## 7. Deciding
