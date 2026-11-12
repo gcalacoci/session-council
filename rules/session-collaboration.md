@@ -60,6 +60,18 @@ thread starter.
 - **Say who said what:** every summary, memo, approval request or status the starter shows
   the user names the source of each suggestion and decision: the user (with date), a
   session by name, the starter itself, or a prior-art source.
+- **Quote, then read:** every brief quotes the user's words verbatim. The starter's
+  interpretation goes on its own line, "My reading: …" (a guess, §5), followed by "Rests on
+  it: …" naming the steps or questions that depend on that reading, so a correction says
+  what to redo.
+- **Reading checks:** before the next step on a point, the starter asks the user one
+  question, as its own message, naming both readings and what each would cause, when:
+  (a) a reviewer sends a READING CHECK (§6); this trigger is unconditional; or (b) the point
+  rests on a reading that changes exposure or security (public/private, ports, auth,
+  permissions), adds a recurring cost or a paid service, sends data off the machine, or is
+  hard to undo (deleting, overwriting, history). The stop covers that point only; other
+  points go on. The answer goes verbatim to every session in the thread, names the READING
+  CHECK it closes, and is checked like any decision ("Acting on a relay").
 - **No side threads:** questions about a thread go to the starter, never to the user in
   another chat. A starter that stops names a new one and tells the user.
 
@@ -82,6 +94,7 @@ rollback; what it doesn't cover; the exact question. Long ones go in a spec file
   keep (for example facts about the user's work) is primary when it quotes the user with a
   date or cites a commit or file; a paraphrased line is second-hand (check it against the
   user's typed words).
+- **A reading of the user's words is a guess too:** see §3 "Quote, then read".
 - Invalid: "based on factual info", "no particular reason", "best practice", "it's safer",
   "I checked" with nothing named. Such replies don't count. Asked "why?" or "based on?",
   give the basis and its weight, or say there was none.
@@ -91,6 +104,10 @@ rollback; what it doesn't cover; the exact question. Long ones go in a spec file
 - Verdict: agree / agree with changes / object, each saying what was checked (§5). "Good
   point", "you're right" are not verdicts. An objection gives a reason and an alternative.
 - Changing position names the new fact that changed it; otherwise it is flagged.
+- **READING CHECK:** a reviewer that doubts the starter's reading of the user's words opens
+  its reply with `READING CHECK: <one question, both readings spelled out>`, before any
+  verdict, and does not design on that point until the answer comes. A reading stated as
+  fact, with no "My reading:" line, is a §5 objection.
 - **Open a source** (every tier, one reviewer included): every review reply names at least
   one source the proposer cited that the reviewer opened itself: the one the decision rests
   on most, not the cheapest. Open the cited lines, not the whole file. Say the result:
